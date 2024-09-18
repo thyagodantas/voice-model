@@ -73,7 +73,7 @@ def text_to_speech():
     engine.save_to_file(text, audio_file)
     engine.runAndWait()
     
-    download_link = f"http://127.0.0.1:5000/download/{audio_file}"
+    download_link = f"https://voice.altekweb.com.br/download/{audio_file}"
     
     return jsonify({'download_link': download_link}), 200
 
