@@ -98,4 +98,4 @@ def close_connection(exception):
 if __name__ == '__main__':
     with app.app_context():
         init_db()  # Inicializa o banco de dados dentro do contexto da aplicação
-    app.run(debug=True, port=5125)
+    app.run('0.0.0.0' , port=5125)
